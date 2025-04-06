@@ -1,0 +1,16 @@
+button {
+    padding: 10px 20px;
+    margin: 20% 0 0 45.50%;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: crosshair;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: pink;
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+}

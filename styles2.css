@@ -1,0 +1,19 @@
+/* Descendant combinator to remove list style and underline */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+/* Child combinator to display menu items inline */
+nav > ul > li {
+    display: inline;
+}
+
+/* Adjacent sibling combinator for margin between items */
+nav ul li + li {
+    margin-left: 20px;
+}

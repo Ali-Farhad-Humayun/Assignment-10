@@ -1,0 +1,56 @@
+/* Part B: Combinator Selectors */
+/* Target all anchor tags and change text color to red */
+nav a {
+    color: red;
+}
+
+/* Target only the first h2 tag */
+nav > h2 {
+    color: white;
+    background-color: black;
+}
+
+/* Select the first p tag */
+nav > p:first-of-type {
+    color: red;
+}
+
+/* Part C: Attribute Selectors */
+/* Target anchor with href attribute */
+a[href] {
+    color: red;
+    text-decoration: none;
+}
+
+/* Target anchor with class="active" */
+a[class="active"] {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Target anchor with target="_self" */
+a[target="_self"] {
+    background-color: yellow;
+}
+
+/* Part D: Pseudo Selectors */
+/* Target last p tag and add three dots */
+nav p:last-of-type::after {
+    content: "...";
+}
+
+/* Change bullet point color without changing text */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li::before {
+    content: "• ";
+    color: green;
+}
+
+/* Target 2nd p tag's first letter */
+nav p:nth-of-type(2)::first-letter {
+    color: red;
+    font-size: 30px;
+}
